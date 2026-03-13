@@ -21,7 +21,7 @@ The data frame contains the following columns:
 }  
 }
 \details{
-Steurer et al. (2006) conducted a Cochrane review to evaluate the effect of single-agent purine analogues for the treatment of chronic lymphocytic leukaemia. This Set contains data from the main outcome, overall survival. Note, the hazard ratios and confidence limits have been reported in the Cochrane review with only two significant figures and were recalculated using the reported log hazard ratios and standard errors.
+Steurer et al. (2006) conducted a Cochrane review to evaluate the effect of single-agent purine analogues for the treatment of chronic lymphocytic leukaemia. This data set contains data from the main outcome, overall survival. Note, the hazard ratios and confidence limits have been reported in the Cochrane review with only two significant figures and were recalculated using the reported log hazard ratios and standard errors.
 
 This data set is used as an example in Schwarzer et al. (2015).
 }
@@ -29,7 +29,7 @@ This data set is used as an example in Schwarzer et al. (2015).
 Steurer, M., Pall, G., Richards, S., et al. (2006).
 Purine antagonists for chronic lymphocytic leukaemia.
 \emph{Cochrane Database of Systematic Reviews},
-\bold{3}, \verb{https://doi.org/10.1002/14651858.CD004270.pub2}
+\bold{3}, \doi{10.1002/14651858.CD004270.pub2}
 }
 \references{
 Schwarzer, G., Carpenter, J. R., & Rücker, G. (2015).
@@ -41,6 +41,7 @@ Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
 }
 \examples{
 \donttest{
+if (requireNamespace("meta", quietly = TRUE)) {
 # Load meta package
 library("meta")
 
@@ -64,10 +65,10 @@ m2
 settings.meta(oldset)
 }
 }
-\keyword{Sets}
+}
+
+\keyword{data sets}
 \concept{medicine}
 \concept{oncology}
 \concept{hazard ratios}
-\section{Concepts}{
-   medicine, oncology, hazard ratios
-}
+\section{Concepts}{medicine, oncology, hazard ratios}

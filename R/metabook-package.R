@@ -1,4 +1,4 @@
-#' metabook: Data Sets and Code for Meta-Analysis with R
+#' metabook: Data Sets and Code for "Meta-Analysis with R"
 #' 
 #' @description
 #' Data sets and code supporting the second edition of "Meta-Analysis with R"
@@ -21,12 +21,6 @@
 #' Springer International Publishing, Switzerland
 #'
 #' @keywords package
-#'
-#' @import meta
-#'
-#' @import netmeta
-#'
-#' @import metasens
 
 
 "_PACKAGE"

@@ -26,7 +26,7 @@ Poole and Black (2003) conducted a Cochrane review to evaluate mucolytic agents 
 This data set is used as an example in Schwarzer et al. (2015).
 }
 \source{
-Poole, P.J., Black, P.N. (2003). Mucolytic agents for chronic bronchitis or chronic obstructive pulmonary disease. \emph{Cochrane Database of Systematic Reviews}, \bold{1}, \verb{https://doi.org/10.1002/14651858.CD001287}
+Poole, P.J., Black, P.N. (2003). Mucolytic agents for chronic bronchitis or chronic obstructive pulmonary disease. \emph{Cochrane Database of Systematic Reviews}, \bold{1}, \doi{10.1002/14651858.CD001287}
 }
 \references{
 Schwarzer, G., Carpenter, J. R., & Rücker, G. (2015). \emph{Meta-analysis with R}. Cham, Switzerland: Springer.
@@ -36,6 +36,7 @@ Guido Schwarzer, \email{guido.schwarzer@uniklinik-freiburg.de}
 }
 \examples{
 \donttest{
+if (requireNamespace("meta", quietly = TRUE)) {
 # Load meta package
 library("meta")
 
@@ -63,10 +64,10 @@ forest(m, xlim = c(-0.5, 0.2),
 settings.meta(oldset)
 }
 }
-\keyword{Sets}
-\concept{medicine}
-\concept{raw mean differences}
-\concept{subgroup analysis}
-\section{Concepts}{
-   medicine, raw mean differences, subgroup analysis
 }
+
+\keyword{data sets}
+\concept{medicine}
+\concept{mean differences}
+\concept{subgroup analysis}
+\section{Concepts}{medicine, mean differences, subgroup analysis}
